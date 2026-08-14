@@ -1,0 +1,45 @@
+Linux Authentication Log Analysis
+=================================
+
+Environment:
+Kali Linux
+SSH Service
+Port: 22
+
+Successful Authentication Events:
+- Aug 11 18:46:58 — Accepted password for user kali from ::1
+- Aug 11 18:53:42 — Accepted password for user kali from ::1
+
+Failed Authentication Events:
+- Aug 11 18:55:53 — Authentication failure for user kali
+- Aug 11 18:55:55 — Failed password for kali from ::1
+- Aug 11 18:56:20 — Password check failed for user kali
+- Aug 11 18:56:23 — Failed password for kali from ::1
+- Aug 11 18:57:35 — Password check failed for user kali
+- Aug 11 18:57:37 — Failed password for kali from ::1
+
+Connection Result:
+- Aug 11 18:57:38 — Connection closed by authenticating user kali
+- PAM recorded additional authentication failures.
+
+Analysis:
+Multiple failed password attempts were observed during a single SSH authentication session.
+The activity was intentionally generated from localhost (::1) as controlled test data.
+The pattern demonstrates how repeated authentication failures can be identified during
+security log analysis and may be an indicator of brute-force activity in a real environment.
+
+Session History Analysis
+========================
+
+Recent SSH sessions:
+- Aug 11 18:46–18:47 — User kali connected from ::1
+- Aug 11 18:53–18:54 — User kali connected from ::1
+
+Current graphical session:
+- User kali is logged in through tty7.
+
+Analysis:
+The recorded SSH sessions originated from the local loopback address (::1), confirming
+that the authentication activity was generated locally within the controlled laboratory
+environment. The session history provides additional context for correlating successful
+authentication events with user sessions.
