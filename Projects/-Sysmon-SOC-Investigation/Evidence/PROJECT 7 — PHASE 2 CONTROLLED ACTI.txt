@@ -1,0 +1,165 @@
+PROJECT 7 — PHASE 2 CONTROLLED ACTIVITY
+
+Test 1:
+Process: Notepad.exe
+Purpose: Harmless process creation test
+Sysmon Event: Event ID 1
+
+Test 2:
+Process: PowerShell.exe
+Command: Write-Output "Project7-Test"
+Purpose: Harmless PowerShell execution test
+Sysmon Event: Event ID 1
+
+Observation:
+Sysmon successfully recorded process creation events including
+process path, command line, user, integrity level, parent process,
+and SHA256 hash.
+
+Test 3:
+Activity: Controlled TCP connection
+Source: 10.61.224.130:60979
+Destination: 8.8.8.8:53
+Destination hostname: dns.google
+Process: powershell.exe
+Sysmon Event: Event ID 3
+Result: Connection successfully captured after enabling Network Connection telemetry.
+
+Observation:
+Sysmon Event ID 3 provided source IP, source port, destination IP,
+destination port, protocol, initiating process, and user information.
+
+PHASE 3 — INVESTIGATION
+
+Investigation Finding 1:
+Sysmon Event ID 1 identified PowerShell process PID 13156.
+
+Process:
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+User:
+DESKTOP-B5I4JD1\USER
+
+Parent Process:
+C:\Windows\explorer.exe
+
+Integrity Level:
+High
+
+Investigation Finding 2:
+Sysmon Event ID 3 correlated the same Process GUID with an outbound
+TCP connection.
+
+Source:
+10.61.224.130:60979
+
+Destination:
+8.8.8.8:53 (dns.google)
+
+Protocol:
+TCP
+
+Initiated:
+True
+
+Assessment:
+Benign controlled activity. The connection was deliberately generated
+as part of Project 7.
+
+Telemetry observation:
+Sysmon Event ID 1 provided process information, while Event ID 3
+provided network connection information. Windows PowerShell logging
+provided additional PowerShell engine telemetry. Multiple telemetry
+sources improved the investigation context.
+
+Investigation Finding 3:
+
+A PowerShell process (PID 10052) was launched by another PowerShell
+process (PID 13156).
+
+Command:
+powershell.exe -NoProfile -Command Get-Date
+
+PHASE 4 — DETECTION & RESPONSE
+
+Detection Scenario:
+Detect PowerShell spawning another PowerShell process.
+
+Telemetry Source:
+Sysmon Operational Log
+
+Event ID:
+1 — Process Create
+
+Detection Indicators:
+- Image: powershell.exe
+- ParentImage: powershell.exe
+- IntegrityLevel: High
+- CommandLine contains PowerShell execution parameters
+
+Controlled Test:
+powershell.exe -NoProfile -Command
+"Write-Output 'Project7-Detection-Test'"
+
+Result:
+Detection condition observed successfully.
+
+Initial Alert:
+Suspicious PowerShell process chain.
+
+Investigation:
+The command was deliberately generated as part of the Project 7
+controlled test.
+
+Final Disposition:
+Benign / authorized test activity.
+
+SOC Lesson:
+Detections should identify potentially suspicious behavior but
+analysts must investigate the surrounding context before declaring
+an event malicious.
+
+RESPONSE ACTION
+
+Alert:
+PowerShell spawned another PowerShell process.
+
+Initial Response:
+The event was validated using Sysmon Event ID 1.
+
+Investigation Actions:
+1. Identified the process and PID.
+2. Identified the initiating user.
+3. Reviewed the command line.
+4. Examined the parent process.
+5. Reviewed integrity level.
+6. Correlated related Sysmon telemetry.
+7. Determined the activity was part of an authorized controlled test.
+
+Final Response:
+No containment or remediation was required because the activity was
+confirmed as benign.
+
+If this were confirmed malicious in a production environment,
+appropriate response actions could include isolating the affected
+endpoint, preserving evidence, terminating the malicious process,
+blocking related indicators, escalating the incident, and documenting
+the incident according to organizational procedures.
+
+User:
+DESKTOP-B5i4JD1\USER
+
+Integrity:
+High
+
+Initial assessment:
+Suspicious because PowerShell launched another PowerShell process
+with elevated integrity.
+
+Investigation result:
+The command executed was Get-Date, a benign system-information
+command. No malicious behavior was identified from the available
+telemetry.
+
+Final assessment:
+Benign controlled activity.
