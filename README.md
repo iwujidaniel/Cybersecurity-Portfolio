@@ -68,7 +68,7 @@ A practical SOC investigation using Windows Sysmon telemetry to examine security
 - Security Investigation
 - Evidence Documentation
 
-➡️ **Project:** `Projects/-Sysmon-SOC-Investigation`
+➡️ **[View Project](Projects/-Sysmon-SOC-Investigation)**
 
 ---
 
@@ -85,7 +85,7 @@ A cybersecurity capstone project focused on securing legacy systems within a hea
 - Risk Mitigation
 - Technical Documentation
 
-➡️ **Project:** `Projects/Apex-Health-Capstone`
+➡️ **[View Project](Projects/Apex-Health-Capstone)**
 
 ---
 
@@ -102,7 +102,7 @@ A hands-on vulnerability assessment performed against the intentionally vulnerab
 - Risk Assessment
 - Remediation Recommendations
 
-➡️ **Project:** `Projects/Kioptrix_Vulnerability_Assessment`
+➡️ **[View Project](Projects/Kioptrix_Vulnerability_Assessment)**
 
 ---
 
@@ -117,7 +117,7 @@ Analysis of Linux authentication and security-related logs to identify authentic
 - Security Event Investigation
 - Technical Documentation
 
-➡️ **Project:** `Projects/Linux_Authentication_Security_Log_Analysis`
+➡️ **[View Project](Projects/Linux_Authentication_Security_Log_Analysis)**
 
 ---
 
@@ -134,7 +134,7 @@ A practical vulnerability assessment of the intentionally vulnerable Metasploita
 - Risk Analysis
 - Remediation Recommendations
 
-➡️ **Project:** `Projects/Metasploitable2-Vulnerability-Assessment`
+➡️ **[View Projects](Projects/Metasploitable2-Vulnerability-Assessment)**
 
 ---
 
@@ -151,7 +151,7 @@ A vulnerability assessment of Metasploitable 2 using Nessus Essentials to identi
 - Remediation Recommendations
 - Technical Reporting
 
-➡️ **Project:** `Projects/Metasploitable2-nessus-vulnerability-assessment`
+➡️ **[View Projects](Projects/Metaspoitable2-nessus-vulnerability-assessment)**
 
 ---
 
@@ -170,7 +170,7 @@ The assessment included vulnerability identification, security testing, evidence
 - Evidence Collection
 - Technical Reporting
 
-➡️ **Project:** `Projects/OWASP-Juice-Shop-Web-Application-Vulnerability-Assessment`
+➡️ **[View Projects](Projects/OWASP-Juice-Shop-Web-Application-Vulnerability-Assessment)**
 
 ---
 
@@ -193,7 +193,7 @@ The investigation analyzed a laboratory dataset containing **215 events**, inclu
 - Risk Assessment
 - SOC Investigation Workflow
 
-➡️ **Project:** `Projects/Splunk-SIEM-Security-Monitoring-Incident-Investigation`
+➡️ **[View Projects](Projects/Splunk-SIEM-Security-Monitoring-Incident-Investigation)**
 
 ---
 
@@ -209,7 +209,7 @@ Analysis of Windows event logs to investigate system and security-related activi
 - Security Monitoring
 - Technical Documentation
 
-➡️ **Project:** `Projects/Windows_Event_Log_Analysis`
+➡️ **[View Projects](Projects/Windows_Event_Log_Analysis)**
 
 ---
 
@@ -225,7 +225,7 @@ A practical network traffic analysis project using Wireshark to inspect packets,
 - Network Security Investigation
 - Evidence Documentation
 
-➡️ **Project:** `Projects/Wireshark_Network_Traffic_Analysis`
+➡️ **[View Projects](Projects/Wireshark_Network_Traffic_Analysis)**
 
 ---
 
