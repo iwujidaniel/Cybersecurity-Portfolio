@@ -134,7 +134,7 @@ A practical vulnerability assessment of the intentionally vulnerable Metasploita
 - Risk Analysis
 - Remediation Recommendations
 
-➡️ **[View Projects](Projects/Metasploitable2-Vulnerability-Assessment)**
+➡️ **[View Project](Projects/Metasploitable2-Vulnerability-Assessment)**
 
 ---
 
@@ -151,7 +151,7 @@ A vulnerability assessment of Metasploitable 2 using Nessus Essentials to identi
 - Remediation Recommendations
 - Technical Reporting
 
-➡️ **[View Projects](Projects/Metaspoitable2-nessus-vulnerability-assessment)**
+➡️ **[View Project](Projects/Metasploitable2-nessus-vulnerability-assessment)**
 
 ---
 
@@ -170,7 +170,7 @@ The assessment included vulnerability identification, security testing, evidence
 - Evidence Collection
 - Technical Reporting
 
-➡️ **[View Projects](Projects/OWASP-Juice-Shop-Web-Application-Vulnerability-Assessment)**
+➡️ **[View Project](Projects/Splunk-SIEM-Security-Monitoring-Incident-Investigation)**
 
 ---
 
@@ -193,7 +193,7 @@ The investigation analyzed a laboratory dataset containing **215 events**, inclu
 - Risk Assessment
 - SOC Investigation Workflow
 
-➡️ **[View Projects](Projects/Splunk-SIEM-Security-Monitoring-Incident-Investigation)**
+➡️ **[View Project](Projects/Splunk-SIEM-Security-Monitoring-Incident-Investigation)**
 
 ---
 
@@ -209,7 +209,7 @@ Analysis of Windows event logs to investigate system and security-related activi
 - Security Monitoring
 - Technical Documentation
 
-➡️ **[View Projects](Projects/Windows_Event_Log_Analysis)**
+➡️ **[View Project](Projects/Windows_Event_Log_Analysis)**
 
 ---
 
@@ -225,7 +225,7 @@ A practical network traffic analysis project using Wireshark to inspect packets,
 - Network Security Investigation
 - Evidence Documentation
 
-➡️ **[View Projects](Projects/Wireshark_Network_Traffic_Analysis)**
+➡️ **[View Project](Projects/Wireshark_Network_Traffic_Analysis)**
 
 ---
 
