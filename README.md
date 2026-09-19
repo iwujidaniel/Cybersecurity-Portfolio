@@ -117,7 +117,7 @@ Analysis of Linux authentication and security-related logs to identify authentic
 - Security Event Investigation
 - Technical Documentation
 
-➡️ **Project:** 'Projects/Linux_Authentication_Security_Log_Analysis'
+➡️ ➡️ **[View Project](Projects/Linux_Authentication__Security_Log_Analysis)**
 
 ---
 
