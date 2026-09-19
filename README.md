@@ -134,7 +134,7 @@ A practical vulnerability assessment of the intentionally vulnerable Metasploita
 - Risk Analysis
 - Remediation Recommendations
 
-➡️ **[View Project](Projects/Metasploitable2-Vulnerability-Assessment)**
+➡️ **[View Project](Projects/Metasploitabe2-Vulnerability-Assessment)**
 
 ---
 
@@ -151,7 +151,7 @@ A vulnerability assessment of Metasploitable 2 using Nessus Essentials to identi
 - Remediation Recommendations
 - Technical Reporting
 
-➡️ **[View Project](Projects/Metasploitable2-nessus-vulnerability-assessment)**
+➡️ **[View Project](Projects/Metasploitabel2-nessus-vulnerability-assessment)**
 
 ---
 
