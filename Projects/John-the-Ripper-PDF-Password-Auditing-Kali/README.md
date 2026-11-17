@@ -125,12 +125,17 @@ The practical exercise was completed successfully.
 
 The following screenshots document the practical exercise:
 
-| No. | Evidence |
-|---|---|
-| 01 | PDF password hash extraction |
-| 02 | Successful John the Ripper recovery (redacted) |
-| 03 | PDF successfully unlocked |
-| 04 | Password recovery verification |
+### 1. PDF Password Hash Extraction
+![PDF Password Hash Extraction](Screenshots/01-Kali-PDF-Hash-Extraction.png)
+
+### 2. John the Ripper Password Recovery (Redacted)
+![Password Recovery - Redacted](Screenshots/02-Kali-John-Password-Recovery-Redacted.png)
+
+### 3. PDF Successfully Unlocked
+![PDF Successfully Unlocked](Screenshots/03-Kali-PDF-Successfully-Unlocked.png)
+
+### 4. Password Recovery Verification
+![Password Recovery Verification](Screenshots/04-Kali-Password-Recovery-Verification.png)
 
 Screenshots are stored in the `Screenshots` directory.
 
